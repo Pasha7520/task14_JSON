@@ -1,0 +1,96 @@
+
+[
+  {
+    "beerNo":0,
+    "name":"golden ale",
+    "type":"ale",
+    "al":true,
+    "manufacturer":"varvar brew",
+    "ingredients":[
+      "water",
+      "hop",
+      "malt"
+    ],
+    "chars":{
+      "alcFraction":6.8,
+      "transparency":21,
+      "filtered":false,
+      "nutritions":20,
+      "spillMethod":{
+        "vol":0.33,
+        "tankMaterial":"glass"
+      }
+    }
+  },
+  {
+    "beerNo":1,
+    "name":"milk stout",
+    "type":"sout",
+    "al":true,
+    "manufacturer":"varvar brew",
+    "ingredients":[
+      "water",
+      "hop",
+      "malt",
+      "lactose"
+    ],
+    "chars":{
+      "alcFraction":4.7,
+      "transparency":18,
+      "filtered":false,
+      "nutritions":50,
+      "spillMethod":{
+        "vol":0.33,
+        "tankMaterial":"glass"
+      }
+    }
+  },
+  {
+    "beerNo":2,
+    "name":"pumpeii",
+    "type":"pumpkin porter",
+    "al":true,
+    "manufacturer":"varvar brew",
+    "ingredients":[
+      "water",
+      "hop",
+      "malt",
+      "pumpkin"
+    ],
+    "chars":{
+      "alcFraction":5.5,
+      "transparency":12.8,
+      "filtered":false,
+      "nutritions":60,
+      "spillMethod":{
+        "vol":0.33,
+        "tankMaterial":"glass"
+      }
+    }
+  },
+  {
+    "beerNo":3,
+    "name":"stella artois",
+    "type":"lager",
+    "al":false,
+    "manufacturer":"stella artois",
+    "ingredients":[
+      "water",
+      "hop",
+      "malt"
+    ],
+    "chars":{
+      "alcFraction":0.0,
+      "transparency":5.0,
+      "filtered":true,
+      "nutritions":25,
+      "spillMethod":{
+        "vol":0.5,
+        "tankMaterial":"plastic"
+      }
+    }
+  }
+]
+
+
+

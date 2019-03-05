@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "beers",
+  "description": "Beer list",
+  "type": "array",
+  "items":{
+    "type": "object",
+    "properties": {
+      "beerNo": {
+        "description": "The unique identifier for a beer",
+        "type": "number",
+        "minimum": 0,
+        "exclusiveMinimum": false
+      },
+      "name": {
+        "description": "name of a beer",
+        "type": "string"
+      },
+      "type": {
+        "description": "type of beer making process",
+        "type": "string"
+      },
+      "al": {
+        "description": "does beer contain alcohol",
+        "type": "boolean"
+      },
+      "manufacturer": {
+        "description": "beer manufacturer name",
+        "type": "string"
+      },
+      "ingredients": {
+        "description": "array of beer ingredients",
+        "type": "array",
+        "items":{
+          "type":"string"
+        },
+        "minItems": 1,
+        "uniqueItems": true
+      },
+      "ingredient": {
+        "description": "ingredient name",
+        "type": "string"
+      },
+      "chars": {
+        "description": "characteristics of beer",
+        "type": "object",
+        "properties":{
+          "alcFraction": {
+            "description": "percent of alcohol",
+            "type": "number"
+          },
+          "transparency": {
+            "description": "The unique identifier for a droid",
+            "type": "number"
+          },
+          "filtered": {
+            "description": "The unique identifier for a droid",
+            "type": "boolean"
+          },
+          "nutritions": {
+            "description": "number of calories",
+            "type": "number"
+          },
+          "spillMethod": {
+            "description": "how to serve beer",
+            "type": "object",
+            "properties":{
+              "vol": {
+                "description": "volume of beer bottle",
+                "type": "number"
+              },
+              "tankMaterial": {
+                "description": "beer bottle material",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "required":["beerNo", "name", "type", "al", "manufacturer"]
+  }
+}
